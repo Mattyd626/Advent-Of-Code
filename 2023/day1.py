@@ -37,20 +37,18 @@ def part_1(input):
     sum = 0
     for line in input:
         sum += find_line_value(line)
-    print(sum)
+    return sum
 
 def part_2(input):
     sum = 0
     for line in input:
         new_line = replace_words(line)
-        if line is not new_line:
-            print(f"{line} -> {new_line} -> {find_line_value(new_line)}")
         sum += find_line_value(new_line)
-    print(sum)
+    return sum
 
 if __name__ == "__main__":
 
     with open("2023/input1.txt",'r') as f:
         input = f.readlines()
-        # part_1(input)
-        part_2(input)
+        print(f"Part 1: {part_1(input)}")
+        print(f"Part 2: {part_2(input)}")
