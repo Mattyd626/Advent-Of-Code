@@ -1,4 +1,4 @@
 ﻿using System.IO;
-using static Day1;
+using static Day2;
 
-Day1.runBoth();
+Day2.runBoth();

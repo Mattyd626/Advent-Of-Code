@@ -1,9 +1,9 @@
 class Day1{
 
     public static void runBoth(){
-        string[] lines = File.ReadAllLines("C:/Users/Matty/Desktop/Coding/hobby/Advent Of Code/2024/Inputs/input1.txt");
-        part1(lines);
-        part2(lines);
+        string[] input = File.ReadAllLines("C:/Users/Matty/Desktop/Coding/hobby/Advent Of Code/2024/Inputs/input1.txt");
+        part1(input);
+        part2(input);
     }
     public static void part1(string[] input){
         int[] list1 = new int[input.Length];
