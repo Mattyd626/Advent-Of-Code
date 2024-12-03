@@ -6,11 +6,11 @@ string[] lines = File.ReadAllLines("C:/Users/Matty/Desktop/Coding/hobby/Advent O
 day1Part2(lines);
 
 void day1Part1(string[] input){
-    int[] list1 = new int[lines.Length];
-    int[] list2 = new int[lines.Length];
+    int[] list1 = new int[input.Length];
+    int[] list2 = new int[input.Length];
 
-    for(int i = 0; i < lines.Length; i++){
-        string[] numbers = lines[i].Split("   ");
+    for(int i = 0; i < input.Length; i++){
+        string[] numbers = input[i].Split("   ");
         list1[i] = Int32.Parse(numbers[0]);
         list2[i] = Int32.Parse(numbers[1]);
     }
@@ -28,13 +28,13 @@ void day1Part1(string[] input){
 }
 
 void day1Part2(string[] input){
-    int[] list1 = new int[lines.Length];
-    int[] list2 = new int[lines.Length];
+    int[] list1 = new int[input.Length];
+    int[] list2 = new int[input.Length];
 
     Dictionary<int,int> instancesOfNumber = new Dictionary<int, int>();
 
-    for(int i = 0; i < lines.Length; i++){
-        string[] numbers = lines[i].Split("   ");
+    for(int i = 0; i < input.Length; i++){
+        string[] numbers = input[i].Split("   ");
         list1[i] = Int32.Parse(numbers[0]);
         list2[i] = Int32.Parse(numbers[1]);
 
